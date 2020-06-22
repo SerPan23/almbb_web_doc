@@ -11,6 +11,27 @@
 
 </pre>
 </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <div class="carousel_overlay"></div>
+                <img src="./../assets/carusel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Witht overlay</h5>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="./../assets/carusel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Without overlay</h5>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
