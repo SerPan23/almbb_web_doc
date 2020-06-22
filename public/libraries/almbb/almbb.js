@@ -16,4 +16,22 @@ $(document).ready(function () {
         $(this).toggleClass('nav-link-show');
     });
     //---------------------
+
+    $(function () {
+        $('.scrollup').click(function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        })
+    })
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.scrollup').fadeIn();
+        }
+        else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
 });

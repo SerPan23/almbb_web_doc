@@ -31,25 +31,27 @@
                 </li>
                 <li class="nav-item">
                     <router-link to="/buttons" class="router-link">
-                        <a class="nav-link" ref="Buttons">Buttons</a>
+                        <a class="nav-link nav-link-collapse" ref="Buttons" id="hasSubItems" data-toggle="collapse"
+                        data-target="#collapseSubItems2" aria-controls="collapseSubItems2" aria-expanded="false">Buttons</a>
                     </router-link>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link nav-link-collapse" href="#" id="hasSubItems" data-toggle="collapse"
-                        data-target="#collapseSubItems2" aria-controls="collapseSubItems2" aria-expanded="false">Item 2</a>
                     <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-link-text">Item 2.1</span>
+                            <a class="nav-link" href="/buttons#newcolor">
+                                <span class="nav-link-text">New color</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-link-text">Item 2.2</span>
+                            <a class="nav-link" href="/buttons#rounded">
+                                <span class="nav-link-text">Rounded</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/buttons#gradient-button">
+                                <span class="nav-link-text">Gradient</span>
                             </a>
                         </li>
                     </ul>
-                </li> -->
+                </li>
             </ul>
         </div>
     </nav>

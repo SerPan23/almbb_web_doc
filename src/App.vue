@@ -2,15 +2,36 @@
  <div id="app" style="height: 100% !important;">
     <page-header></page-header>
     <router-view></router-view>
+    <div class="btn-scrollup-gradient-blue scrollup"><i class="fa fa-chevron-up"></i></div>
   </div>
 </template>
 
 <script>
 import PageHeader from './components/Header.vue'
-//import $ from "jquery"
+import $ from "jQuery"
 export default {
   name: 'App',
   components: { PageHeader },
+
+  mounted(){
+    $(function() {
+        $('.scrollup').click(function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        })
+    })
+    $(window).scroll(function() {
+        if ($(this).scrollTop()>200) {
+            $('.scrollup').fadeIn();
+        }
+        else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+  },
 }
 </script>
 
